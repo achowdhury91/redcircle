@@ -13,6 +13,7 @@ body {
   min-width: 45vw;
   height: 80vh;
   border: 1px solid black;
+  overflow: scroll;
 }
 
 .content .panel:last-child {

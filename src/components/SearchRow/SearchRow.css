@@ -1,0 +1,10 @@
+.SearchRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SearchRow img {
+  width: 75px;
+  margin-right: 15px;
+}
