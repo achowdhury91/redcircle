@@ -1,9 +1,10 @@
 import React from 'react'
+import SearchBar from '../SearchBar/SearchBar'
 
 const SearchContainer = () => {
   return (
     <div className='SearchContainer'>
-      SearchContainer
+      <SearchBar />
     </div>
   )
 }

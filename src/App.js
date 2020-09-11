@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useReducer } from 'react'
 import 'App.css'
 import SearchContainer from './components/SearchContainer/SearchContainer'
+
+import {
+  charactersReducer,
+  initialState,
+  CharactersContextProvider,
+} from './reducers/charactersReducer'
 
 // const getAllCharacters = async () => {
 //   const raw = await fetch('https://rickandmortyapi.com/api/character/')
@@ -30,18 +36,22 @@ import SearchContainer from './components/SearchContainer/SearchContainer'
 // }
 
 const App = () => {
-  return (
-    <div className='App'>
-      <div className='content'>
-        <div className='panel'>
-          <SearchContainer />
-        </div>
+  const [state, dispatch] = useReducer(charactersReducer, initialState)
 
-        <div className='panel'>
-          test
+  return (
+    <CharactersContextProvider value={{ state, dispatch }}>
+      <div className='App'>
+        <div className='content'>
+          <div className='panel'>
+            <SearchContainer />
+          </div>
+
+          <div className='panel'>
+            test
+          </div>
         </div>
       </div>
-    </div>
+    </CharactersContextProvider>
   )
 }
 
