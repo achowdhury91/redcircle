@@ -1,17 +1,20 @@
 import React from 'react'
+import { UPDATE_CHARACTERS, REMOVE_CHARACTERS } from '../constants/actionConstants'
 
 export const initialState = {
+  characters: [],
+  selectedCharacterId: null,
 }
 
 export function charactersReducer(state, action) {
   switch (action.type) {
-    case 'update':
+    case UPDATE_CHARACTERS:
       return {
         ...state,
-        ...action.payload,
+        characters: action.payload,
       }
 
-    case 'remove':
+    case REMOVE_CHARACTERS:
       return initialState
 
     default:
