@@ -12,13 +12,12 @@ const SearchResults = () => {
     <div className='SearchResults'>
       {
         characters.map(elem => {
-          const { id, name, image } = elem
+          const { id } = elem
 
           return (
             <SearchRow
               key={id}
-              name={name}
-              imageUrl={image}
+              {...elem}
             />
           )
         })
