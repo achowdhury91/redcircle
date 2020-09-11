@@ -3,7 +3,7 @@ import CharactersContext from '../../reducers/charactersReducer'
 import { UPDATE_CHARACTERS } from '../../constants/actionConstants'
 
 const SearchBar = () => {
-  const { state, dispatch } = useContext(CharactersContext)
+  const { dispatch } = useContext(CharactersContext)
 
   const [inputValue, setInputValue] = useState('')
 
