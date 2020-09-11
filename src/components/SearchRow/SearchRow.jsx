@@ -9,7 +9,7 @@ const SearchRow = ({
 
   return (
     <div className='SearchRow'>
-      <img src={imageUrl} />
+      <img src={imageUrl} alt={name} />
 
       <div className='name'>{name}</div>
     </div>
