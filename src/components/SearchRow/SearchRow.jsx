@@ -5,8 +5,6 @@ const SearchRow = ({
   name,
   imageUrl,
 }) => {
-  console.log(name)
-
   return (
     <div className='SearchRow'>
       <img src={imageUrl} alt={name} />
