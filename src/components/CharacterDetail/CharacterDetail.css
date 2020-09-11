@@ -1,0 +1,9 @@
+.CharacterDetail .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CharacterDetail .content img {
+  margin-bottom: 10px;
+}

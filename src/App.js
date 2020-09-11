@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import 'App.css'
 import SearchContainer from './components/SearchContainer/SearchContainer'
+import Details from './components/Details/Details'
 
 import {
   charactersReducer,
@@ -20,7 +21,7 @@ const App = () => {
           </div>
 
           <div className='panel'>
-            test
+            <Details />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const SearchRow = ({
   image,
   id,
 }) => {
-  const { state, dispatch } = useContext(CharactersContext)
+  const { dispatch } = useContext(CharactersContext)
 
   const handleClick = () => {
     dispatch({

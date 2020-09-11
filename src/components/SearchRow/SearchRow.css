@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
+}
+
+.SearchRow:hover {
+  background-color: #e8e8e8;
 }
 
 .SearchRow img {
