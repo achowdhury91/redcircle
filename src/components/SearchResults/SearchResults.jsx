@@ -8,8 +8,6 @@ const SearchResults = () => {
 
   const { characters = [] } = state
 
-  console.log(characters)
-
   return (
     <div className='SearchResults'>
       {
